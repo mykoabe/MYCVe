@@ -1,0 +1,20 @@
+body {
+    color: #665544;
+    background-color: #d4d0c6;
+    font-family: Georgia, "Times New Roman", serif;
+    text-align: center;} 
+#content {
+    width: 720px;
+    margin: 0px auto;}
+header {
+    margin: 40px 0px 20px 0px;}
+#one {
+    background-color: #d4d0c6;
+    width: 30%;
+    float: left;
+    margin: 1.6%;
+}
+img{
+    width: 100%;
+}
+
