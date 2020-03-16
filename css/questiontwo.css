@@ -1,0 +1,30 @@
+h1{
+  color: blue;
+  font-size: 50px;
+  margin-left: 400px;
+}
+
+.top_horizontal{
+    width: 300px;
+    border-top: 3px solid black;
+    margin-top: 200px;
+    margin-left: 400px;
+}
+.bottom_horizontal{
+    width: 300px;
+    border-top: 3px solid black;
+    margin-top: 200px;
+    margin-left: 400px;
+}
+.left_vertical{
+    height: 55vh;
+    border-left: 3px solid black;
+    margin-left: 478px;
+    margin-top: -360px;
+}
+.right_vertical{
+    height: 55vh;
+    border-left: 3px solid black;
+    margin-left: 638px;
+    margin-top: -300px;
+}
