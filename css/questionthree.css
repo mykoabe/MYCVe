@@ -12,11 +12,11 @@ container{
     margin-left: 50px;
     width: 50%;
     height: 400px;
-    background: linear-gradient(150deg, blue 40%, yellow 40% 45%, red 45% 55%, yellow 55% 60%,blue 60% 100% );
+    background: linear-gradient(150deg, #0000ff 40%, #ffff00 40% 45%, #ff0000 45% 55%, #ffff00 55% 60%,blue 60% 100% );
 }
 #star{
     position: absolute;
-    color:yellow;
+    color:rgb(255, 255, 0);
     font-size: 30vh;
 }
 #star{
@@ -24,7 +24,7 @@ container{
     height: 0;
     border-left: solid 100px transparent;
     border-right: solid 100px transparent;
-    border-bottom: solid 70px red;
+    border-bottom: solid 70px #ff0000;
     transform: rotate(35deg);
     margin-top: 60px;
 }
@@ -38,7 +38,7 @@ container{
     left: -65px;
     border-left: solid 30px transparent;
     border-right: solid 30px transparent;
-    border-bottom: solid 70px red;
+    border-bottom: solid 70px #ff0000cb;
     transform: rotate(-35deg);
 }
 #star::after{
@@ -51,7 +51,7 @@ container{
     left: -105px;
     border-left: solid 100px transparent;
     border-right: solid 100px transparent;
-    border-bottom: solid 70px red; 
+    border-bottom: solid 70px rgba(255, 0, 0, 0.986); 
     transform: rotate(-70deg);
 }
 h1{
@@ -59,7 +59,7 @@ h1{
 }
 /* ================================ */
 #CURACAO{
-    background-color: blue;
+    background-color: rgb(15, 15, 228);
     width: 50%;
     height: 400px;
     margin-left: 50px;
@@ -67,19 +67,19 @@ h1{
 }
 #yellow{
     position: absolute;
-    background-color: yellow;
+    background-color: #ffff00;
     height: 40px;
     width: 50%;
     margin-top: 75px;
 }
 #first_star{
     position: absolute;
-    color:yellow;
+    color:rgba(255, 255, 0, 0.911);
     font-size: 100px;
 }
 #second_star{
     position: relative;
-    color:yellow;
+    color:rgba(255, 255, 0, 0.918);
     font-size: 100px;
     left: 50px;
     top: 50px;
@@ -90,24 +90,24 @@ h1{
    margin-left: 50px;
    width: 50%;
    height: 300px;
-   background: linear-gradient(30deg, blue 45%, white 45% 49%, red 49% 53%, white 53% 57%, blue 57% 100%);
+   background: linear-gradient(30deg, rgb(0, 0, 255) 45%, hsl(0, 0%, 100%) 45% 49%, red 49% 53%, white 53% 57%, blue 57% 100%);
 }
 
 #vertical{
     position: relative;
     left: 250px;
-    border-left: 20px solid white;
-    border-right: 20px solid white;
+    border-left: 20px solid rgb(255, 255, 255);
+    border-right: 20px solid #ffffff;
     width: 45px;
     height: 300px;
-    background-color: red;  
+    background-color: hsl(0, 100%, 50%);  
 }
 #horizontal{
-    border-top: 20px solid white;
-    border-bottom: 20px solid white;
+    border-top: 20px solid #ffffff;
+    border-bottom: 20px solid #ffffff;
     width: 100%;
     height: 45px;
-    background-color: red;  
+    background-color: rgba(255, 0, 0, 0.918);  
     margin-top: -200px;
 }
 /* =========================== */
@@ -115,7 +115,7 @@ h1{
 .BOUVET_ISLAND{
     width: 50%;
     height: 300px;
-    background-color: red;
+    background-color: rgba(255, 0, 0, 0.966);
     margin-left: 50px;
     margin-top: 50px;
 }
@@ -123,21 +123,21 @@ h1{
     position: absolute;
     width: 70px;
     height: 300px;
-    background-color: white;
+    background-color: rgb(255, 255, 255);
     left: 12vw;   
 }
 #horizontal_two{
     position: relative;
     width: 100%;
     height: 70px;
-    background-color: white;
+    background-color: rgb(255, 255, 255);
     top: 16vh;   
 }
 #inner_one{
     position: absolute;
     width: 40px;
     height: 300px;
-    background-color:blue;
+    background-color:rgba(0, 0, 255, 0.952);
     left: 13vw; 
     margin-top: -5vw; 
 }
@@ -145,7 +145,7 @@ h1{
     position: relative;
     width: 100%;
     height: 40px;
-    background-color: blue;
+    background-color: rgb(0, 0, 255);
     top: 8vh;   
 }
 /* ========================== */
@@ -162,7 +162,7 @@ h1{
     width: 0;
 	height: 0;
 	border-top: 200px solid transparent;
-	border-left: 340px solid white;
+	border-left: 340px solid hsl(0, 0%, 100%);
 	border-bottom: 200px solid transparent;
 }
 /* #D_star{
@@ -177,7 +177,7 @@ h1{
     height: 0;
     border-left: solid 100px transparent;
     border-right: solid 100px transparent;
-    border-bottom: solid 70px red;
+    border-bottom: solid 70px rgb(255, 0, 0);
     transform: rotate(35deg);
     margin-left: -360px;
     margin-top: -50px;
@@ -192,7 +192,7 @@ h1{
     left: -65px;
     border-left: solid 30px transparent;
     border-right: solid 30px transparent;
-    border-bottom: solid 70px red;
+    border-bottom: solid 70px rgb(255, 0, 0);
     transform: rotate(-35deg);
 }
 #D_star::after{
@@ -205,7 +205,7 @@ h1{
     left: -105px;
     border-left: solid 100px transparent;
     border-right: solid 100px transparent;
-    border-bottom: solid 70px red; 
+    border-bottom: solid 70px rgb(255, 0, 0); 
     transform: rotate(-70deg);
 }
 /* =========================== */
@@ -220,14 +220,14 @@ h1{
 #vertical_georgia{
     height: 400px;
     width: 60px;
-    background-color: red;
+    background-color: hsl(0, 100%, 50%);
     position: absolute;
     left: 25%;
 }
 #horizontal_georgia{
     height: 60px;
     width: 100%;
-    background-color: red;
+    background-color: rgb(255, 0, 0);
     position: relative;
     top: 150px;
 }
@@ -240,21 +240,21 @@ h1{
 .one_h{
     width: 30px;
     height: 120px;
-    background-color: red;
+    background-color: hsl(0, 100%, 50%);
     margin-left: 100px;
     margin-top: -80px;
 }
 .two_v{
     width: 120px;
     height: 30px;
-    background-color: red;
+    background-color: #ff0000;
     margin-top: 150px;
     margin-left: 55px;
 }
 .two_h{
     width: 30px;
     height: 120px;
-    background-color: red;
+    background-color: #ff0000;
     margin-left: 100px;
     margin-top: -80px;
 }
@@ -262,7 +262,7 @@ h1{
     position: absolute;
     width: 30px;
     height: 120px;
-    background-color: red;
+    background-color: #ff0000;
     margin-left: 440px;
     margin-top: -330px;
 }
@@ -270,27 +270,27 @@ h1{
     position: absolute;
     width: 120px;
     height: 30px;
-    background-color: red;
+    background-color: #ff0000;
     margin-left: 400px;
     margin-top: -280px;
 }
-.two_v{
+.four_v{
     width: 120px;
     height: 30px;
-    background-color: red;
-    margin-top: 150px;
-    margin-left: 55px;
+    background-color: #ff0000;
+    margin-left: 400px;
+    margin-top: -60px;
 }
-.two_h{
+.four_h{
     width: 30px;
     height: 120px;
-    background-color: red;
-    margin-left: 100px;
-    margin-top: -80px;
+    background-color: hsl(0, 100%, 50%);
+    margin-left: 440px;
+    margin-top: -70px;
 }
 
 /* =============== */
-.five{
+/* .five{
     width: 0;
     height: 0;
     border-left: solid 100px transparent;
@@ -323,27 +323,37 @@ h1{
     border-right: solid 100px transparent;
     border-bottom: solid 70px red; 
     transform: rotate(-70deg);
-}
-/* the flag of BOSNIA AND HERZEGOVINA */
+} */
+/* the flag of MAURITIUS */
 .main_container{
     margin-top: 150px;
     margin-left: 50px;
     width: 50%;
     height: 400px;
-    background-color: blue;
+    border: solid 1px rgb(141, 135, 135);
 }
-.triangle_two{
-    width: 0;
-    height: 0;
-    border-bottom: solid 400px transparent;
-    border-right: solid 300px yellow;
-    margin-left: 200px;
+#m{
+    height: 100px;
+    background-color: rgb(255, 0, 0);
+}
+#n{
+
+    height: 100px;
+    background-color: #0000ff;
+}
+#o{
+    height: 100px;
+    background-color: #ffff00;
+}
+#p{
+    height: 100px;
+    background-color: #008000;
 }
 /* the flag of vetinam */
 #vetinam{
     width: 50%;
     height: 400px;
-    background-color: blue;
+    background-color: rgb(255, 0, 0);
     margin-top: 50px;
     margin-left: 50px;
     display: flex ;
@@ -355,7 +365,7 @@ h1{
     height: 0;
     border-left: solid 100px transparent;
     border-right: solid 100px transparent;
-    border-bottom: solid 70px red;
+    border-bottom: solid 70px rgb(255, 230, 0);
     transform: rotate(35deg);
 }
 .star:before{
@@ -368,7 +378,7 @@ h1{
     left: -65px;
     border-left: solid 30px transparent;
     border-right: solid 30px transparent;
-    border-bottom: solid 70px red;
+    border-bottom: solid 70px rgb(251, 255, 0);
     transform: rotate(-35deg);
 }
 .star::after{
@@ -381,14 +391,173 @@ h1{
     left: -105px;
     border-left: solid 100px transparent;
     border-right: solid 100px transparent;
-    border-bottom: solid 70px red; 
+    border-bottom: solid 70px #fbff00; 
     transform: rotate(-70deg);
 }
+/* ========================== */
+/*  the flag of TIMOR-LESTE */
 .TIMOR-LESTE{
     width: 50%;
     height: 400px;
-    background-color: red;
+    background-color: rgb(255, 0, 0);
 }
-.triangle_three{
+.triangle_th{
+    width: 0;
+    height: 0;
+    border-bottom: solid 200px transparent;
+    border-top: solid 200px transparent;
+    border-left: solid 400px rgba(255, 255, 0, 0.904);
 
 }
+#triangle_th{
+    width: 0;
+    height: 0;
+    border-bottom: solid 200px transparent;
+    border-top: solid 200px transparent;
+    border-left: solid 300px #070807f8;
+    margin-top: -200px;
+    margin-left: -400px;
+}
+#stars{
+    width: 0;
+    height: 0;
+    border-left: solid 100px transparent;
+    border-right: solid 100px transparent;
+    border-bottom: solid 70px rgb(231, 230, 230);
+    transform: rotate(35deg);
+    margin-left: -300px;
+    margin-top: -30px;
+}
+#stars:before{
+    position: absolute;
+    display: block;
+    content: '';
+    width: 0;
+    height: 0;
+    top: -45px;
+    left: -65px;
+    border-left: solid 30px transparent;
+    border-right: solid 30px transparent;
+    border-bottom: solid 70px rgb(252, 249, 249);
+    transform: rotate(-35deg);
+}
+#stars::after{
+    position: absolute;
+    display: block;
+    content: '';
+    width: 0;
+    height: 0;
+    top: 3px;
+    left: -105px;
+    border-left: solid 100px transparent;
+    border-right: solid 100px transparent;
+    border-bottom: solid 70px #f8f8f8; 
+    transform: rotate(-70deg);
+}
+/* =============================== */
+/* PUERTO RICO flag */
+#PUERTO RICO{
+    width: 50%;
+    height: 400px;
+    border: solid 1px rgb(199, 198, 198);
+}
+#red1{
+    height: 80px;
+    background-color: #ff0000;
+}
+#white{
+    height: 80px;
+    background-color: #f7f3f3;
+}
+#red2{
+    height: 80px;
+    background-color: #ff0000;
+}
+#white2{
+    height: 80px;
+    background-color: #f7f1f1;
+}
+#red3{
+    height: 80px;
+    background-color: #ff0000;
+}
+#left_triangle{
+    width: 0;
+    height: 0;
+    border-bottom: solid 200px transparent;
+    border-top: solid 200px transparent;
+    border-left: solid 300px #0c0292;
+    margin-top: -400px;
+}
+#stars{
+    width: 0;
+    height: 0;
+    border-left: solid 100px transparent;
+    border-right: solid 100px transparent;
+    border-bottom: solid 70px rgb(231, 230, 230);
+    transform: rotate(35deg);
+    margin-left: -300px;
+    margin-top: -30px;
+}
+#stars:before{
+    position: absolute;
+    display: block;
+    content: '';
+    width: 0;
+    height: 0;
+    top: -45px;
+    left: -65px;
+    border-left: solid 30px transparent;
+    border-right: solid 30px transparent;
+    border-bottom: solid 70px rgb(252, 249, 249);
+    transform: rotate(-35deg);
+}
+#stars::after{
+    position: absolute;
+    display: block;
+    content: '';
+    width: 0;
+    height: 0;
+    top: 3px;
+    left: -105px;
+    border-left: solid 100px transparent;
+    border-right: solid 100px transparent;
+    border-bottom: solid 70px #f8f8f8; 
+    transform: rotate(-70deg);
+}
+/* the flag SEYCHELLES */
+#TONGA{
+    width: 100%;
+    height: 400px;
+    border: solid 1px rgb(185, 180, 180);
+    background-color: rgb(255, 0, 0);
+}
+#container2{
+    position: relative;
+    background-color: rgb(255, 254, 254);
+    width: 200px;
+    height: 200px;
+    top: -20px;
+}
+#t_vertical{
+    width: 40px;
+    height: 150px;
+    background-color: rgb(243, 8, 39);
+    margin-left: 80px;
+    margin-top: 20px;
+}
+#t_horizontal{
+    width: 150px;
+    height: 40px;
+    background-color: rgb(247, 6, 6);
+    margin-top: -90px;
+    margin-left: 30px;
+}
+/* ======================= */
+/* TRINIDAD AND TOBAGO */
+#TRINIDAD_AND_TOBAGO{
+     width: 100%;
+     height: 400px;
+     background: linear-gradient(43deg, red 40%, white 40% 45%, black 45% 55%, white 55% 60%,red 60% 100%);
+}
+ 
