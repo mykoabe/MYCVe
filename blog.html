@@ -6,6 +6,29 @@
     <title>Document</title>
 </head>
 <body>
-    
+    <p>
+        The first change which is introduced in CSS3 is the opacity property which allows us to specify the opacity of an element
+        and any of its child elements.The value is a number between 0.0 and 1.0 (so a value of 0.5
+        is 50% opacity and 0.15 is 15% opacity).The CSS3 rgba property allows us to specify a color,
+        like we use for the RGB value, but adds a fourth value to indicate opacity. This value is
+        known as an alpha value. The rgba value will only affect the element on which it is applied
+        (not child elements).But some browsers will not recognize RGBA colors,so we must offer a fallback so that they
+        display a solid color. If there are two rules that apply to the same element, the latter of the two
+        will take priority. To create the fallback, we can specify a color as a hex code, color name or
+        RGB value, followed by the rule that specifies an RGBA value. If the browser understands RGBA colors it will use that rule. If it
+        doesn't, it will use the RGB value. At the time of writing, the opacity and RGBA properties are only supported by the most
+        recent browsers.
+    </p>
+    <p>
+        Another change which CSS3 introduces is an entirely new and intuitive way to specify colors using 
+        hue, saturation, and lightness values. HUE is expressed as an angle (between 0 and 360 degrees).
+        saturation is expressed as a percentage. lightness is expressed as a percentage with 0% being white, 50% being normal,
+        and 100% being black.Lightness is the amount of white (lightness) or black (darkness) in a color. Lightness
+        is represented as a percentage.0% lightness is black, 100% lightness is white, and 50% lightness is normal. Lightness
+        is sometimes referred to as luminosity. Saturation is the amount of gray in a color. Saturation is
+        represented as a percentage.100% is full saturation and 0% is a shade of gray.
+        Hue is the colloquial idea of color. In HSL colors, hue is often represented as a color circle
+        where the angle represents the color, although it may also be shown as a slider with values from 0 to 360.
+    </p>
 </body>
 </html>
