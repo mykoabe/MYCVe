@@ -1,0 +1,17 @@
+body {
+    background-image: url("../image/dark-wood.jpg");
+}
+.page{
+    margin: -20px 30px auto 30px;
+    background: linear-gradient(to bottom right, rgb(177, 155, 155), rgb(219, 219, 52) , rgb(132, 143, 83));
+}
+h2 {
+	color: #df25a7;
+	text-transform: uppercase;
+    letter-spacing: 2px;
+    padding-top: 20px;
+
+}
+p{
+    color: black;
+}
