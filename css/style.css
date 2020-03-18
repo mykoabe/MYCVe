@@ -34,10 +34,11 @@ nav li a:link {color: black;}
 nav li a:visited{color:black;}
 nav li a:hover{color: greenyellow;}
 nav li a:active{color: green;}
-}
 nav li a:hover, nav li a.current {
     color:red;}
 #description {
+    display: flex;
+    justify-content: space-around;
     clear: both;
     overflow: auto;
     width: 100%;}
@@ -51,9 +52,6 @@ img{
 }
 #file{
     margin-top: 100px;
-}
-#me{
-    margin-left: 40%;
 }
 h1{
     margin-bottom: 50px;

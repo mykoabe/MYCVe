@@ -3,7 +3,7 @@ body {
 }
 .page{
     margin: -20px 30px auto 30px;
-    background: linear-gradient(to bottom right, rgb(177, 155, 155), rgb(219, 219, 52) , rgb(132, 143, 83));
+    background-color: rgb(236, 228, 228);
 }
 h2 {
 	color: #df25a7;
@@ -11,7 +11,14 @@ h2 {
     letter-spacing: 2px;
     padding-top: 20px;
 
+}.question_one{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 70%;
+    
 }
+
 p{
     color: black;
 }
