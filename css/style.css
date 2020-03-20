@@ -1,11 +1,12 @@
+*{
+    margin: 0;
+}
 body {
     color: rgb(80, 42, 42);
     background-color: rgb(202, 198, 198);
     background-image: url("./image/dark-wood.jpg");
     background-position: center;
     font-family: 'Times New Roman', Times, serif;
-    line-height: 1.4em;
-    display: block;
     margin: 0px;}
 #page {
     width: 97%;
@@ -18,35 +19,42 @@ body {
 }
 nav{
     margin-top: 40px;
-    margin-left: 30px;
+    background: linear-gradient(30deg, rgb(170, 165, 165) 50%, rgb(165, 163, 163) 50%);
+    border-radius: 4em;
 }
 nav ul {
     margin: 0px;
     padding: 5px 0px 5px 30px;}
 nav ul>li {
     display: inline;
-    font-size: 25px;
+    font-size: 20px;
     font-family: Arial, Helvetica, sans-serif;
     font-style: italic;
     margin-right: 40px;
     text-decoration: none;}
-nav li a:link {color: black;}
-nav li a:visited{color:black;}
+nav li a:link{
+              text-decoration: none;
+              color: rgb(65, 9, 9);}
+nav li a:visited{color:rgba(5, 3, 3, 0.986);}
 nav li a:hover{color: greenyellow;}
-nav li a:active{color: green;}
-nav li a:hover, nav li a.current {
-    color:red;}
+nav li a:active{color: white;}
 #description {
     display: flex;
-    justify-content: space-around;
-    clear: both;
+    justify-content: space-between;
+    line-height: 4em;
+    margin-top: 30px;
+    /* clear: both;
     overflow: auto;
-    width: 100%;}
+    width: 100%; */}
 figure {
-    float: left;
-    padding: 5px;
-    margin: 20px;
+     flex: 1;
+     justify-content: space-around;
     }
+
+#me{
+    flex: 1;
+    justify-content: space-between;
+}
 img{
    height: fit-content;
 }
@@ -58,6 +66,15 @@ h1{
     margin-top: 100px;
     font-weight: bolder;
     font-size: 50px;
+    -webkit-animation: mymove 5s infinite; /* Chrome, Safari, Opera */
+    animation: mymove 5s infinite;
+}
+@-webkit-keyframes mymove {
+    50% {font: 40px bold;}
+}
+/* Standard syntax */
+@keyframes mymove {
+    50% {font: 40px bold;}
 }
 h3.mi{
  font-weight: bolder;
@@ -69,10 +86,6 @@ p.ri{
 #all_contents{
     clear: both;
     width: 100%;
-}
-article.status {
-    float: left;
-    width: 32%;
 }
 
 /* =================================================== */
@@ -91,7 +104,7 @@ th, td {
     margin: 0px;}
 th, td {
     text-align: left;
-    background-color: rgb(202, 198, 198);
+    background-color: rgb(173, 168, 168);
     border: 1px solid rgb(228, 221, 221);
    }
 tr.head th {
@@ -113,11 +126,31 @@ ul>li{
     list-style-type: none;
 }
 .bottom{
+    display: flex;
     background-color: rgb(143, 142, 142);
     font-family: 'Times New Roman', Times, serif;
     color: rgb(6, 11, 36);
-    width: 100%;
-    height: 500px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    line-height: inherit;
+    /* width: 100%;
+    height: 500px; */
+}
+.status_1{
+    flex: 1.5;
+    font-size: 1.25rem;
+    color: #2c1026;
+}
+.status_2{
+    flex: 1;
+}
+.status_3{
+    flex: 1;
+    font-size: 1.25rem;
+    color: #2c1026;
+}
+p{
+    line-height: 50px;
 }
 h2.hed{
     text-align: center;
@@ -229,17 +262,81 @@ footer{
     margin-top: 0;
     width: 97%;
 }
+h3{
+    text-align: center;
+}
 .social ul>li{
-    display: inline;
+    display: inline-flex;
+    align-items: center;
     padding: 20px;
+    text-align: center;
+    margin-top: 40px;
 }
 footer p{
-    color:white;
+    color:rgb(216, 212, 212);
     text-align: center;
+    font-size: 1.2em;
 }
 p iframe{
     position: relative;
     width: 600px;
     height: 300px;
     margin-top: 0px;
+}
+/* for the image gallary */
+#content {
+    width: 720px;
+    margin: 0px auto;}
+#one {
+    background-color: #d4d0c6;
+    width: 30%;
+    float: left;
+    margin: 1.6%;
+}
+#national{
+    margin-top: -40px;
+}
+/* the media query */
+@media only screen and (max-width: 767px){
+    #content {
+        width: 767px;
+        margin: 0px auto;}
+    header {
+        margin: 30px 0px 10px 0px;}
+    #description {
+        display: flex;
+        flex-direction: column;}
+    #one {
+        background-color: #d4d0c6;
+        width: 50%;
+        float: left;
+        margin: 1.6%;
+    }
+    img{
+        width: 100%;
+    }
+    #national{
+        margin-top: -40px;
+    }
+}
+.checkbtn{
+    font-size: 30px;
+    color: rgb(21, 7, 212);
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+#check{
+    display: none;
+}
+@media (max-width : 768px){
+    label.log{
+      font-size: 30px;
+      padding-left: 50px;
+    }
+    nav ul li a{
+       font-size: 16px; 
+    }
 }

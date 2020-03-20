@@ -7,6 +7,16 @@
     <link rel="stylesheet" href="./css/blog.css">
 </head>
 <body>
+    <nav>
+        </label>
+        <ul> 
+            <li><a href="index.html">Home</a></li>
+            <li><a href="contacts.html">Contact</a></li>
+            <li><a href="Gallary.html">Gallery</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="myworks.html">Myworks</a></li>
+        </ul>
+    </nav>
 <div class="page">
     <div class="question_one">
     <h2>The major Changes of CSS3</h2>
@@ -27,7 +37,7 @@
         Another change which CSS3 introduces is an entirely new and intuitive way to specify colors using 
         hue, saturation, and lightness values. HUE is expressed as an angle (between 0 and 360 degrees).
         saturation is expressed as a percentage. lightness is expressed as a percentage with 0% being white, 50% being normal,
-        and 100% being black.Lightness is the eeamount of white (lightness) or black (darkness) in a color. Lightness
+        and 100% being black.Lightness is the amount of white (lightness) or black (darkness) in a color. Lightness
         is represented as a percentage.0% lightness is black, 100% lightness is white, and 50% lightness is normal. Lightness
         is sometimes referred to as luminosity. Saturation is the amount of gray in a color. Saturation is
         represented as a percentage.100% is full saturation and 0% is a shade of gray.
@@ -39,51 +49,67 @@
         in pixels. we can specify the individual values using border-top-right-radius,border-bottom-right-radius
         border-bottom-left-radius, border-top-left-radius.We can also use a shorthand of these four properties (in
         clockwise order: top, right,bottom, left). For example: border-radius: 10px, 5px,6px, 45px; there for
-        using this property we can draw the eliptical shapes and rounded corners. 
+        using this property we can draw the eliptical shapes and rounded corners. For additional clarifications
+        see <a href="https://www.academia.edu/31552563/Jon_Duckett_HTML_and_CSS_Design_and_Build_Websites.pdf">html and css design and build websites Jon Duckett</a>.
     </p>
+    <p id="time">March 16 2020</p>
     </div>
-    <div>
+    <div class="question_two"> 
+        <h2>Does it matter using relative size(%,em,rem) on styling the size of an
+            element so that the element is responsive?</h2>
         <p>
             Yes it matters. we must choose the right relative units(%, em , rem) to create flexible and robust 
             designs in a straightforward manner.for example if we consider the browser zooming. When the user
-             zooms the page in a modern browser, everything scales up — or down — proportionally, depending 
+             zooms the page in a modern browser, everything scales up or down proportionally, depending 
              on the user’s preference. That means our users/end users need to be able to zoom the viewport without 
              loss of content or functionality, or restrictions imposed by CSS values or viewport scaling settings.
              The page may zoom, however the fonts will not scale up relatively to the browser default font size setting. 
-             Therefore, the end user experience is being impacted by the developer’s choice to use pixels for fonts.
-             when does we use the pixels, em and rem? you can use <a href="http://www.standardista.com/px-to-rem-conversion-if-root-font-size-is-16px/">
-                great px to rem conversion reference table</a> here or If you want an online calculator use this 
-                <a href="http://pxtoem.com/">Pxtoem</a> . 
-             => we didn't use em sometimes.for example, we quite often come into a problem with
-              images, for example icons, but it can be whatever image. We want to set width using `em`s as well to 
-              scale up with `font-size` of a link which the icon belongs to, but it renders blurry sometimes 
+             Therefore, the end user experience is being impacted by the developer’s choice to use pixels or relative units for fonts.
+             we can use <a href="http://www.standardista.com/px-to-rem-conversion-if-root-font-size-is-16px/">
+                great px to rem conversion reference table</a> here or If we want an online calculator use this 
+                <a href="http://pxtoem.com/">Pxtoem</a> to change all conversion . 
+            lets see one by one this the relative units and the pixels when we use and don't use.
+             sometimes the web developer may come into a problem with
+              images, for example icons, but it can be whatever image. he want to set width using `em`s as well to 
+              scale up with `font-size` of a link which the icon belongs to, but it (the browser) renders blurry sometimes 
               because it computes to a value like 12.15245px. So we are forced to set it in pixel value so it is 
               not blurred but then it would not scale up when font-size through browser setting is increased/decreased
-            => we use em when 
         </p>
         <p>
-            According to the <a href="http://www.w3.org/TR/2013/CR-css3-values-20130730/#font-relative-lengths">W3C spec</a> the definition for one rem unit is:
-
-Equal to the computed value of font-size on the root element. When 
-specified on the font-size property of the root element, the rem units refer to the property’s initial value.
-
-This means that 1rem equals the font size of the html element (which for
- most browsers has a default value of 16px).
- The main problem with em units is that they are relative to the font size of their
-  own element. As such they can cascade and cause unexpected results. Let’s consider the 
-  following example, where we want lists to have a font size of 12px,
-  in the case where the root font size is the default 16px: Especially, if you're designing 
-  for multiple resolutions with responsive design.
-  Think of generally smaller or larger font sizes on mobile phones. 
-  It takes time to recalculate every pixel value to the new base font size. 
-  This is where relative font sizes become useful. With em/rem sizing, you can change 
-  just the base font size for a specific viewport to decrease or increase all font sizes, 
-  while keeping proportions between the different styles.
-  This leads to problems, because it might become complex to know the 
-  inherited font size from within the CSS. Here it comes to rem. The cool thing about this 
-  CSS3 unit is, that it always uses the root (e.g. html) 
-  font size as the base size instead of the inherited one. Therefore it is always calculable.
+            According to the <a href="http://www.w3.org/TR/2013/CR-css3-values-20130730/#font-relative-lengths">W3C spec</a> 
+            the definition for one rem unit is equal to the computed value of font-size on the root element. When 
+            specified on the font-size property of the root element, the rem units refer to the property’s initial value.
+            This means that 1rem equals the font size of the html element (which for most browsers has a default value of 16px).
+            The main problem with em units is that they are relative to the font size of their own element. 
+            As such they can cascade and cause unexpected results. Let’s consider the following example, where we 
+            want lists to have a font size of 12px, in the case where the root font size is the default 16px: 
+            Especially, if we're designing for multiple resolutions with responsive design. Think of generally 
+            smaller or larger font sizes on mobile phones. It takes time to recalculate every pixel value to the new base font size. 
+            This is where relative font sizes become useful. With %,em/rem sizing, we can change just the base font size for 
+            <a href=""></a> specific viewport to decrease or increase all font sizes, 
+            while keeping proportions between the different styles.   This leads to problems, because it might become complex to know the 
+            inherited font size from within the CSS. Here it comes to rem. The cool thing about this 
+            CSS3 unit is, that it always uses the root (e.g. html) font size as the base size instead of 
+            the inherited one. Therefore it is always calculable. There for using the relative size matters 
+            the browser zooming.
         </p>
+        <p id="time">march 16 2020</p>
+    </div>
+    <div class="question_two"> 
+        <h2>We said 16px is default browser font size so what does it mean when we say
+            200px ? How does the browser interprets that?</h2>
+        <p> The browser has the default font size of 16px means all the contents inside the html page have the font 
+            size of 16px or 1rem. but it doesn't include the header groups from h1 to h6. Generally according
+            to <a href="https://developer.mozilla.org/en/docs/Web/CSS/font-size">font-size - CSS: Cascading Style Sheets | MDN</a>
+            If we haven't set font size anywhere on the page, then it would be the browser default, 
+            which is probably 16px. So by default 1rem = 16px. If we were to go and set a font-size 
+            of 200px on the browser text, the value or the text becomes about 12.5 times of that of the
+            default browser font size which is 16px or 1rem.
+            </p>
+            <p>But if we give the body about 16px or 1em, and we were to go and set a font-size 
+                of 200px on the browser text the value will gove its value relativly the body of the 
+                web page. </p>
+            <p id="time">march 16 2020</p>
     </div>
 </div>
 </body>
